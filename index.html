@@ -3,9 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Schere, Stein, Papier</title>
 </head>
 <body>
+    <div class="app">
+        <div class="playerMoves">
+            <button class="playersButton" onclick="playGame('schere')">Schere</button>
+            <button class="playersButton" onclick="playGame('stein')">Stein</button>
+            <button class="playersButton" onclick="playGame('papier')">Papier</button>
+            <button class="playersButton" onclick="resetScore()">Neustart</button>
+        </div>
+        <div class="gameInfos">
+            <p class="gameMove"></p>
+            <p class="gameResult"></p>
+            <p class="gameScore"></p>
+        </div>
+    </div>
     <script src="index.js"></script>
 </body>
 </html>
