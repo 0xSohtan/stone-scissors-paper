@@ -1,0 +1,15 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.playersButton {
+    border-radius: 100%;
+}
+
+.playersButton img{
+    width: 200px;
+    height: 200px;
+}
