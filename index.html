@@ -9,16 +9,18 @@
 <body>
     <div class="app">
         <div class="playerMoves">
-            <button class="playersButton" onclick="playGame('schere')">
-                <img src="assets/Schere.png" alt="Schere">
-            </button>
-            <button class="playersButton" onclick="playGame('stein')">
-                <img src="assets/Stein.png" alt="Stein">
-            </button>
-            <button class="playersButton" onclick="playGame('papier')">
-                <img src="assets/Papier.png" alt="Papier">
-            </button>
-            <button class="resetButton" onclick="resetScore()">Neustart</button>
+            <div class="battle"></div>
+            <div class="moves">
+                <button class="playersButton" onclick="playGame('Schere')">
+                    <img src="assets/Schere.png" alt="Schere">
+                </button>
+                <button class="playersButton" onclick="playGame('Stein')">
+                    <img src="assets/Stein.png" alt="Stein">
+                </button>
+                <button class="playersButton" onclick="playGame('Papier')">
+                    <img src="assets/Papier.png" alt="Papier">
+                </button>
+            </div>
         </div>
         <div class="gameInfos">
             <p class="gameMove"></p>
@@ -29,6 +31,7 @@
                 <p class="scoreUnentschieden"></p>
             </div>
         </div>
+        <button class="resetButton" onclick="resetScore()">Neustart</button>
     </div>
     <script src="index.js"></script>
 </body>

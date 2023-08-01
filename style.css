@@ -1,8 +1,23 @@
-body{
+@font-face {
+    font-family: Circular-Black;
+    src: url(assets/fonts/CircularStd-Black.otf);
+}
+
+@font-face {
+    font-family: Circular-Book;
+    src: url(assets/fonts/CircularStd-Book.otf);
+}
+
+*{
+    font-family: Circular-Book;
+    text-align: center;
+}
+
+.app{
+    display: grid;
+    place-items: center;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
 }
 
 .playersButton {
@@ -12,4 +27,40 @@ body{
 .playersButton img{
     width: 200px;
     height: 200px;
+}
+
+.battle img {
+    width: 200px;
+    height: 200px;
+}
+
+.gameScore {
+    display: flex;
+    justify-content: center;
+}
+
+.gameScore p{
+    padding: 0px 20px;
+}
+
+.battle{
+    display: flex;
+    align-items: center;
+}
+
+.battle img{
+    animation: wiggle 1s infinite;
+}
+
+@keyframes wiggle {
+    0% { transform: rotate(0deg); }
+   80% { transform: rotate(0deg); }
+   85% { transform: rotate(5deg); }
+   95% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+@keyframes loadingBattle {
+    0% { transform: r}
+  100% {} 
 }
