@@ -1,6 +1,10 @@
 const playersMoveDiv = document.querySelector('.moves');
 const battleScreen = document.querySelector('.battle');
 
+window.onload = function () {
+    selectScore();
+}
+
 const score = JSON.parse(localStorage.getItem('score')) || {
     wins: 0,
     niderlagen: 0,
@@ -109,6 +113,7 @@ function resetScore() {
     score.unentschieden = 0;
     localStorage.removeItem('score');
     playersMoveDiv.style.display = 'block';
+    battleScreen.style.display = 'none';
     updateScore();
 }
 

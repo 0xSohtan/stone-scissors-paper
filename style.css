@@ -52,6 +52,10 @@
     animation: wiggle 1s infinite;
 }
 
+.resetButton {
+    font-size: large;
+}
+
 @keyframes wiggle {
     0% { transform: rotate(0deg); }
    80% { transform: rotate(0deg); }
@@ -63,4 +67,33 @@
 @keyframes loadingBattle {
     0% { transform: r}
   100% {} 
+}
+
+
+@media screen and (min-width: 767px) and (max-width: 1023px){
+
+    .playersButton img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .battle img {
+        width: 100px;
+        height: 100px;
+    }
+    
+}
+
+@media screen and (max-width: 767px){
+
+    .playersButton img{
+        width: 50px;
+        height: 50px;
+    }
+
+    .battle img {
+        width: 50px;
+        height: 50px;
+    }
+    
 }
